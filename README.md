@@ -16,7 +16,7 @@ Welcome to the Dream Home Planner project! This website serves as a comprehensiv
 ## Team Members
 1. 2021/T/01127 - A.V.W.Jayawardane
 2. 2021/T/01126 - M.H.D.M.Jayasinghe
-3. **[Index Number]** - [Name]
+3. 2021/T/01179 - G.M. Vithanage
 4. **[Index Number]** - [Name]
 5. **[Index Number]** - [Name]
 6. **[Index Number]** - [Name]
