@@ -1,0 +1,182 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,200;1,700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --text-color:#000000;
+    --main-color:#83b735;
+
+}
+section{
+    padding: 50px 10%;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+header{
+    position: relative;
+    width:100%;
+    top: 0;
+    right:0;;
+    z-index:1000;
+    display:flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #edecea;
+    
+
+}
+.logo{
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+.logo span{
+    color:var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1; 
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+   
+
+}
+.navbar a:hover{
+    color:var(--main-color);
+}
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display:none;
+
+}
+.home{
+    width: 100%;
+    min-height: 120vh;
+    background-image: url(https://png.pngtree.com/background/20230526/original/pngtree-white-bedroom-with-luxury-bedding-picture-image_2740715.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+    display: flex;
+    align-items:center;
+}
+.home-text h1{
+    font-size: 2.7rem;
+}
+.home-text p{
+    font-size: 0.9388rem;
+    margin: 0.4rem 0 ;
+}
+.home-text span{
+    color:var(--main-color)
+}
+.btn2{
+    padding:10px 14px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.3rem;
+    font-size: 14px;
+}
+.btn2:hover{
+    background: #8fc53d;
+}
+
+.p1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+/* product */
+
+.sec{
+    padding:10px 5%;
+
+}
+.products .card{
+    width:310px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding:5px;
+    margin-bottom: 20px;
+}
+
+.products .card img{
+    height:300px;
+    width: 100%;
+}
+.products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+.products .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.products .card .box .price{
+    color: #8fc53d;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.products .card .box .btn{
+    font-size: 13px;
+    color:#8fc53d;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #8fc53d;
+    border-radius: 20px;
+}
+
+.products .card .box .btn:hover{
+    cursor:pointer;
+    background-color: #83b735;
+    color: white;
+}
+
+footer{
+    background-color: #edecea;
+    height: 10vh;
+
+}
+
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+
+
+

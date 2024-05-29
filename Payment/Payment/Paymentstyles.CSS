@@ -1,0 +1,261 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --text-color: #000000;
+    --main-color: #83b735;
+}
+
+/*Normal Styles*/
+body {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/*Section*/
+section {
+    padding: 50px 10%;
+}
+
+/*Navigation Bar*/
+header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; 
+    background: #edecea;
+}
+
+.logo {
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1; 
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*Homepage*/
+.home {
+    width: 100%;
+    min-height: 120vh;
+    background-image: url('img/background5.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    display: flex;
+    align-items: center;
+}
+
+.home-text h1 {
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 0.9388rem;
+    margin: 0.4rem 0;
+}
+
+.home-text span {
+    color: var(--main-color);
+}
+
+/*Buttons*/
+.btn2 {
+    padding: 10px 14px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.3rem;
+    font-size: 14px;
+}
+
+.btn2:hover {
+    background: #8fc53d;
+}
+
+/*4 Payment Page*/
+.payment-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.payment-container .input-group {
+    margin-bottom: 20px;
+}
+
+.payment-container .input-group label {
+    display: block;
+    font-size: 0.9388rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.payment-container .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9388rem;
+}
+
+.payment-container .btn2 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.payment-container .btn2:hover {
+    background: #8fc53d;
+}
+
+/*Foot*/
+footer {
+    background-color: #edecea;
+    height: 10vh;
+}
+
+footer p {
+    text-align: center;
+    line-height: 10vh;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        padding: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+        font-size: 0.875rem;
+    }
+
+    .payment-container {
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .payment-container h2 {
+        font-size: 1.25rem;
+    }
+
+    .payment-container .input-group label,
+    .payment-container .input-group input,
+    .payment-container .btn2 {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px; 
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .payment-container {
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .payment-container h2 {
+        font-size: 1rem;
+    }
+
+    .payment-container .input-group label,
+    .payment-container .input-group input,
+    .payment-container .btn2 {
+        font-size: 0.75rem;
+    }
+}
