@@ -6,8 +6,7 @@ Welcome to the Dream Home Planner project! This website serves as a comprehensiv
 ## Features
 - **User-friendly Interface**: A clean and intuitive interface for seamless navigation.
 - **Product Categories**: Organized sections for bedroom goods, kitchen goods, and other home appliances.
-- **Product Search and Filters**: Easy search functionality with filters for price, brand, and features.
-- **Product Reviews and Ratings**: User-generated reviews and ratings for informed purchasing decisions.
+- **Product Search**: Easy search functionality.
 - **Secure Checkout**: A secure and efficient checkout process with multiple payment options.
 - **Responsive Design**: Fully responsive design for optimal viewing on various devices.
 
@@ -16,7 +15,7 @@ Welcome to the Dream Home Planner project! This website serves as a comprehensiv
 
 ## Team Members
 1. 2021/T/01127 - A.V.W.Jayawardane
-2. **[Index Number]** - [Name]
+2. 2021/T/01126 - M.H.D.M.Jayasinghe
 3. **[Index Number]** - [Name]
 4. **[Index Number]** - [Name]
 5. **[Index Number]** - [Name]
