@@ -1,7 +1,7 @@
 # Dream House
 
 ## Project Description
-Welcome to the Home Appliances Marketplace project! This website serves as a comprehensive marketplace for various home appliances and goods, including bedroom goods, kitchen goods, and more. Our goal is to provide an easy-to-use platform where users can browse, compare, and purchase a wide range of home appliances from different categories.
+Welcome to the Dream Home Planner project! This website serves as a comprehensive marketplace for various home appliances and goods, including bedroom goods, kitchen goods, and more. Our goal is to provide an easy-to-use platform where users can browse, compare, and purchase a wide range of home appliances from different categories.
 
 ## Features
 - **User-friendly Interface**: A clean and intuitive interface for seamless navigation.
