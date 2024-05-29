@@ -17,11 +17,11 @@ Welcome to the Dream Home Planner project! This website serves as a comprehensiv
 1. 2021/T/01127 - A.V.W.Jayawardane
 2. 2021/T/01126 - M.H.D.M.Jayasinghe
 3. 2021/T/01179 - G.M. Vithanage
-4. **[Index Number]** - [Name]
-5. **[Index Number]** - [Name]
-6. **[Index Number]** - [Name]
-7. **[Index Number]** - [Name]
-8. **[Index Number]** - [Name]
-9. **[Index Number]** - [Name]
-10. **[Index Number]** - [Name]
+4.
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
 
