@@ -15,7 +15,7 @@ Welcome to the Home Appliances Marketplace project! This website serves as a com
 - **Frontend**: HTML, CSS, JavaScript
 
 ## Team Members
-1. **[Index Number]** - [Name]
+1. 2021/T/01127 - A.V.W.Jayawardane
 2. **[Index Number]** - [Name]
 3. **[Index Number]** - [Name]
 4. **[Index Number]** - [Name]
