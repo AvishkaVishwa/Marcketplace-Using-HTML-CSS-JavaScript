@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - Home</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light grey background */
+        }
+        section{
+            padding: 50px 10%;
+        }
+        /* Header Styles */
+        header {
+            background-color:#006600; /* green background for header */
+            color: #ffffff; /* White text color */
+            padding: 1rem;
+            text-align: center;
+            height: 120px;
+        }
+        footer{background-color:#006600; /* green background for header */
+            color: #ffffff; /* White text color */
+            padding: 1rem;
+            text-align: center;
+            
+
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .intro-text span{
+        color:var(--main-color)
+        }
+        .intro-text h1{
+         font-size: 2.7rem;
+         }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #32CD32;
+        }
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #006600; /* green button */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #74c365; /* light shade of green on hover */
+        }
+        /* Image Button Styles */
+        .img-btn-container {
+            display: flex;
+            justify-content: center; /* Center items horizontally */
+            gap: 1rem; /* Spacing between images */
+            margin-top: 2rem;
+        }
+        .img-btn {
+            position: relative;
+            width: 200px; /* Set a fixed width for each image button */
+            height: 200px; /* Set a fixed height for each image button */
+            background-color: #ffffff; /* White background for image button */
+            border: 2px solid #1a237e; /* Navy blue border */
+            border-radius: 10px; /* Rounded corners for image button */
+            overflow: hidden; /* Hide overflowing content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+            transition: transform 0.3s ease; /* Add transition effect for hover */
+        }
+        .img-btn img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease; /* Add transition effect for image on hover */
+        }
+        .img-btn:hover {
+            transform: scale(1.1); /* Scale up image button on hover */
+        }
+        .img-btn .img-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #ffffff; /* White text color */
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .img-btn:hover .img-text {
+            opacity: 1;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 1rem;
+        }
+        .navbar a {
+            color: #000000;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            align:right;
+        }
+        .navbar a:hover {
+            background-color: #74c365; /* light shade of green on hover */
+            align:right;
+
+        }
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: #000000;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown-content a:hover {
+            background-color: #74c365;
+        }
+        .search-container {
+            position: relative;
+        }
+        .search-container input[type="text"] {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+        .search-container button {
+            background-color: #006600; /* green button */
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+        .home {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url(https://th.bing.com/th/id/R.483fe1bc78f90f1e1c30a9c30667772a?rik=Q7TDL4k2F2WoCQ&pid=ImgRaw&r=0);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+          
+        }
+
+        #menu-icon {
+            font-size: 2rem;
+            cursor: pointer;
+            display: none;
+
+        }
+
+        .home-text h1{
+            font-size: 2.7rem;
+        }
+         .home-text p{
+            font-size: 0.9388rem;
+            margin: 0.4rem 0 ;
+        }
+
+        .home-text span {
+            color: #000000;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+         
+       
+           <h1> <img src="C:\Users\GAYUMI\Desktop\IP Web Site\Home page\images\OIG4.jpeg" alt="Your Logo" class="logo-img" height="100px" width="100px" align="center">
+         DREAM HOUSE </h1>
+    
+    <!-- Navigation Menu -->
+   <div class="navbar">
+            <a href="#about us">About</a>
+            <a href="#contact us">Contact</a>
+            <a href="#Discover our services">Services</a>
+            <div class="dropdown">
+                <a href="#">Settings</a>
+                <div class="dropdown-content">
+                    <a href="#">Edit Personal Details</a>
+                    <a href="#">Log Out</a>
+                    <a href="file:///C:/Users/GAYUMI/Desktop/IP%20Web%20Site/Home%20page/help.html">Help</a>
+                </div>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit" onclick="searchRedirect()">Search</button>
+            </div>
+        </div>
+   </header>
+    
+         <section class="home" id="home">
+            <div class="home-text">
+             <h1><span> WELCOME</span> </br><font color="#83b735"> to Dream House </font><br></h1>
+                <p><span> Your Destination for Interior Designing</span></p>
+                </div>
+        </section>
+         <section id="about us">
+        <h3 ><font color="#7bb661">ABOUT US:</font></h3>
+            <p>we're passionate about helping you find the perfect furnitures and home appliances to your dream house. Our platform offers a diverse range of services designed to make your journey towards your dream home seamless and enjoyable.</p>
+
+            <p> explore a vast selection of furnitures from modern world, each offering unique opportunities for your dream project. Discover high-quality home furnishings that will not only elevate your living spaces but also reflect your personal style and preferences. Dive into our collection of interior design ideas, where creativity meets functionality, and customize your space to suit your vision perfectly.</p>
+
+            <p>We understand that your dream home is more than just a place; it's a reflection of who you are and what you aspire to be. That's why we're here to guide you every step of the way, from browsing listings to turning your ideas into reality.</p>
+
+            <p>Start your journey today with DREAM HOUSE and transform your dream home vision into a tangible reality!</p>
+            <p>We offer a wide range of services to help you find the perfect land and plan your dream house.</p>
+            <a href="services.html" class="btn">Discover Our Services</a>
+        </section>
+        <section id="Discover our services">
+        <!-- Image Buttons Section -->
+        <div class="img-btn-container">
+            <a href="file:///C:/Users/GAYUMI/Desktop/IP%20Web%20Site/Kitchen/Kitchen/html/kitchen.html" class="img-btn">
+                <img src="https://th.bing.com/th/id/OIP.e1ZrLXHTAJnvsn9Ad8gWmAHaJQ?rs=1&pid=ImgDetMain">
+                <span class="img-text">kichen items</span>
+            </a>
+            <a href="buy-furniture.html" class="img-btn">
+                <img src="https://www.rockymountainhardware.com/wp-content/uploads/2023/02/20180921_KargmanRes_Featured.jpg" alt="Buy Furniture">
+                <span class="img-text">living room</span>
+            </a>
+            <a href="file:///C:/Users/GAYUMI/Desktop/IP%20Web%20Site/BEDROOM/BEDROOM/Html/file.html" class="img-btn">
+                <img src="https://i.pinimg.com/originals/34/dd/ba/34ddba19c4a2dbb135ab0c55e79588e5.jpg" alt="bedroom">
+                <span class="img-text">Bedroom</span>
+            </a>
+            <a href="file:///C:/Users/GAYUMI/Desktop/IP%20Web%20Site/bathware/Group%20Project/file.html" class="img-btn">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6a64e1113957097.6032673b12aa7.jpg" alt="bathware">
+                <span class="img-text">bathware</span>
+            </a>
+        </section>
+        </div>
+        <p></br></p>
+        <footer>
+            <section class="contact-section" >
+                <section id="about us">
+                <h2>Contact Us</h2>
+                <div class="contact-details">
+                    <p>Email: gaumimadhushika@gmail.com</p>
+                    <p>Phone: 0774466056</p>
+                    <p>Address: 324,Horagalawaththa,Berukatiya, Kiriwaththuduwa</p>
+                </div>
+            </section></section>
+            <p>Copyrights! All Rights Recieved<a href="#" class="logo" ><span>DREAM</span> HOUSE</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function searchRedirect() {
+            var input = document.getElementById("searchInput").value.toLowerCase();
+            if (input === "bathware") {
+                window.location.href = "file:///C:/Users/GAYUMI/Desktop/IP%20Web%20Site/bathware/Group%20Project/file.html";
+            } else if (input === "kitchen") {
+                window.location.href = "file:///C:/Users/GAYUMI/Desktop/IP%20Web%20Site/Kitchen/Kitchen/html/kitchen.html";
+            } else if (input === "bedroom") {
+                window.location.href = "file:///C:/Users/GAYUMI/Desktop/IP%20Web%20Site/BEDROOM/BEDROOM/Html/file.html";
+            } else if (input === "living room") {
+                window.location.href = "livingroom.html";
+            } else {
+                alert("No matching results found.");
+            }
+        }
+    </script> 
+</body>
+</html>
