@@ -10,7 +10,7 @@ Welcome to the Dream Home Planner project! This website serves as a comprehensiv
 - **Secure Checkout**: A secure and efficient checkout process with multiple payment options.
 - **Responsive Design**: Fully responsive design for optimal viewing on various devices.
 
-## Technologies Used
+## Languages Used
 - **Frontend**: HTML, CSS, JavaScript
 
 ## Team Members
