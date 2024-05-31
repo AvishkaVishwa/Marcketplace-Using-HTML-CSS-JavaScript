@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f7f7f7;
+    background-image: url('pexels-cup-of-couple-7303151.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container, .signup-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family:poppins;
+    font: weight 10px;;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #a7c957;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+button {
+    background-color: #a7c957;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #8bb045;
+    transform: scale(1.05);
+}
+
+a {
+    color: #af381a;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family:poppins;
+
+}
+
+a:hover {
+    color: #361209;
+    text-decoration: underline;
+}
+
+.social-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.social-signup button {
+    background-color: #4285F4;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 80%;
+}
+
+
+
+.social-signup button#facebookSignup {
+    background-color: #3b5998;
+}
+
+.social-signup button:hover {
+    transform: scale(1.05);
+}
+
+.social-signup .google-logo {
+    margin-left: 10px; /* Adjust this value to control the space */
+}
+.social-signup .facebook-logo {
+    margin-left: 10px; /* Adjust this value to control the space */
+}
+
+
+#message, #signupMessage {
+    margin-top: 1rem;
+    color: red;
+}
