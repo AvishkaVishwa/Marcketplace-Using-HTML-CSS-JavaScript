@@ -1,3 +1,6 @@
+window.onload = function() {
+    alert("Welcome to the Home Page!");
+};
 function searchRedirect() {
     var input = document.getElementById("searchInput").value.toLowerCase();
     if (input === "bathware") {
@@ -11,4 +14,5 @@ function searchRedirect() {
     } else {
         alert("No matching results found.");
     }
+  
 }
