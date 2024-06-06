@@ -19,9 +19,9 @@ Welcome to the Dream Home Planner project! This website serves as a comprehensiv
 3. 2021/T/01179 - G.M.Vithanage
 4. 2021/T/01108 - Bimsara Gunawardana
 5. 2021/T/01116 - H.C.K.Hettiarachchi 
-6. 
-7. 
-8. 
-9. 
-10.  
+6. 2021/T/01138 - P.W.Madanayake
+7. 2021/T/01120 - Ama Hirushima
+8. 2021/T/01107 - A.S.Ambuldeniya
+9. 2021/T/01171 - N.G.Sirimann
+10.   
 
